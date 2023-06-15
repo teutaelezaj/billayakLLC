@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    @media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    nav ul {
+        transition: transform 0.3s ease-in-out;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #ffffff; /* Change this to white */
+        transform: translateX(100%);
+        text-align: center;
+        overflow: scroll;
+        display: none;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        padding: 60px 0 15px; 
+    }
+
+    nav ul li a {
+        color: #333333; /* Change link color to dark for visibility on white background */
+        text-decoration: none;
+        font-size: 1.5em; /* Increase the font size */
+    }
+
+    .nav-toggle:checked ~ ul {
+        transform: translateX(0);
+        display: block;
+    }
+
+    .nav-toggle:checked ~ .hamburger-menu span:nth-child(1) {
+        transform: rotate(45deg);
+        transform-origin: top left;
+    }
+
+    .nav-toggle:checked ~ .hamburger-menu span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle:checked ~ .hamburger-menu span:nth-child(3) {
+        transform: rotate(-45deg);
+        transform-origin: bottom left;
+    }
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    background-color: white;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.hamburger-menu {
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    transform: translateY(-50%);
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.hamburger-menu span {
+    width: 2rem;
+    height: 0.25rem;
+    background: #333;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    nav ul {
+        transition: transform 0.3s ease-in-out;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #ffffff; /* Change this to white */
+        /* padding-top: 60px; */
+        transform: translateX(100%);
+        text-align: center;
+        overflow: scroll;
+        display: none;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        padding: 60px 0 15px; 
+    }
+
+    nav ul li a {
+        color: #333333; /* Change link color to dark for visibility on white background */
+        text-decoration: none;
+        font-size: 1.5em; /* Increase the font size */
+    }
+
+    .nav-toggle:checked ~ ul {
+        transform: translateX(0);
+        display: block;
+    }
+
+    .nav-toggle:checked ~ .hamburger-menu span:nth-child(1) {
+        transform: rotate(45deg);
+        transform-origin: top left;
+    }
+
+    .nav-toggle:checked ~ .hamburger-menu span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle:checked ~ .hamburger-menu span:nth-child(3) {
+        transform: rotate(-45deg);
+        transform-origin: bottom left;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+nav ul li {
+    margin: 0 15px; /* Adjust these values as needed */
+    list-style: none;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Adds some space on the sides of the navbar */
+}
+
+#logo {
+    height: 100px; /* Adjust this value as needed */
+    width: auto;
+}
+
+
+@media screen and (min-width: 769px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+nav ul li {
+    margin: 0 15px; /* Adjust these values as needed */
+    list-style: none;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Adds some space on the sides of the navbar */
+}
+
+
+    
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px;
+      padding-bottom: 250px;
+    }
+    
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    
+    /* CSS for mobile */
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+      
+      h1 {
+        font-size: 40px;
+      }
+      
+      p {
+        font-size: 14px;
+      }
+    }
+    .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer p {
+    margin: 0 0 10px; /* You can change this */
+}
+
+.footer a {
+    color: #fff; /* You can change this */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ffd700; /* You can change this */
+}
+
+
+
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <img src="images/BillayakLLC.png" id="logo" alt="Company Logo">
+            <ul>
+                <li><a href="./main.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  <div class="container">
+    <h1>About Us</h1>
+    <h1>About Us</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus quis tortor gravida scelerisque. Nunc sed vulputate arcu. Aliquam finibus justo ut risus iaculis, vitae finibus felis pharetra. In et finibus ex, sed rutrum elit. Integer quis purus sed risus vulputate viverra. Quisque consequat, nulla et finibus efficitur, nisl risus congue tellus, sed tempus nunc quam et massa. Integer non arcu facilisis, sagittis sapien ut, ullamcorper mi. Etiam ut est sit amet lacus tincidunt venenatis.</p>
+    <p>Maecenas consequat, est vel fringilla feugiat, felis sem commodo elit, sit amet maximus dolor nisl id velit. Morbi hendrerit luctus diam, ut facilisis nisi faucibus id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce ultricies feugiat orci, sed maximus dolor cursus ac. Pellentesque eu feugiat libero. Nunc et pellentesque elit. Suspendisse nec tellus risus.</p>
+  </div>
+
+
+
+  <div class="footer">
+    <p><a href="main.html">Home</a></p>
+    <p><a href="privacypolicy.html">Privacy Policy</a></p>
+    <p><a href="termsofservice.html">Terms of Service</a></p>
+    <p><a href="contact.html">Contact</a></p>
+</div>
+  
+</body>
+</html>
